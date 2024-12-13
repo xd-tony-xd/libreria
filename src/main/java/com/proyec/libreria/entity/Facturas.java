@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "proveedores")
+@Table(name = "facturas")
 @Getter
 @Setter
 public class Facturas {
