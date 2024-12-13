@@ -12,7 +12,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "productos_generales")
+@Table(name = "productosgenerales")
 @Getter
 @Setter
 public class ProductosGenerales {
@@ -21,7 +21,7 @@ public class ProductosGenerales {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_producto;
 
-    @Column(name = "nombre", nullable = false, length = 100)
+    @Column(name = "nombre", nullable = false)
     private String nombre;
 
     @Column(name = "precio", nullable = false)
