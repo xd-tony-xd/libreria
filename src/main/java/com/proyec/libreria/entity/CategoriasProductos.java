@@ -10,7 +10,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "categorias_productos")
+@Table(name = "categoriasproductos")
 @Getter
 @Setter
 public class CategoriasProductos {
@@ -19,9 +19,9 @@ public class CategoriasProductos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_categoria;
 
-    @Column(name = "nombre_categoria", nullable = false, length = 100)
+    @Column(name = "nombre_categoria", nullable = false)
     private String nombreCategoria;
 
-    @Column(name = "descripcion", length = 255)
-    private String descripcion;
+    @Column(name = "descripcion")
+    private String descripcion; 
 }
