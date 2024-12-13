@@ -21,12 +21,12 @@ public class ProductosGenerales {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_producto;
 
-    @Column(name = "nombre", nullable = false)
+    @Column(name = "NOMBRE", nullable = false)
     private String nombre;
 
-    @Column(name = "precio", nullable = false)
+    @Column(name = "PRECIO", nullable = false)
     private BigDecimal precio;
 
-    @Column(name = "stock", nullable = false)
+    @Column(name = "STOCK", nullable = false)
     private Integer stock;
 }

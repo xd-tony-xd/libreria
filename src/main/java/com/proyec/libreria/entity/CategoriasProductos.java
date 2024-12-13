@@ -5,12 +5,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "categoriasproductos")
+@Table(name = "categorias_productos")
 @Getter
 @Setter
 public class CategoriasProductos {
@@ -19,9 +21,11 @@ public class CategoriasProductos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_categoria;
 
-    @Column(name = "nombre_categoria", nullable = false)
+    @Column(name = "NOMBRECATEGORIA", nullable = false)
     private String nombreCategoria;
 
-    @Column(name = "descripcion")
-    private String descripcion; 
+    @Column(name = "DESCRIPCION", nullable =false)
+    private String descripcion;	
+    
+
 }

@@ -21,16 +21,16 @@ public class Libros {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_libro;
 
-    @Column(name = "titulo", nullable = false, length = 150)
+    @Column(name = "TITULO", nullable = false, length = 150)
     private String titulo;
 
-    @Column(name = "autor", length = 100)
+    @Column(name = "AUTOR", length = 100)
     private String autor;
 //Ofrece precisión exacta y no pierde información al realizar operaciones matemáticas.puedes asegurarte de que no haya errores de redondeo.
-    @Column(name = "precio", nullable = false)
+    @Column(name = "PRECIO", nullable = false)
     private BigDecimal precio;
 
 
-    @Column(name = "stock", nullable = false)
+    @Column(name = "STOCK", nullable = false)
     private Integer stock;
 }

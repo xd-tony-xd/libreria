@@ -1,29 +1,26 @@
-package com.entityTrab.entity.entity;
+package com.proyec.libreria.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
-@Ventas
-@Table(name = "Ventas")
+import java.math.BigDecimal;
 
+@Entity
+@Table(name = "ventas")
+@Getter
+@Setter
 public class Ventas {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_venta")
-    private long idVenta;
+    private Long id_Venta;
 
-    
-    @JoinColumn(name = "id_factura", referencedColumnName = "id_factura")
-    private Factura factura;
+    @Column(name = "id_factura", nullable = false)
+    private Long idFactura;  // Cambio: Referencia directa al id de la factura
 
-    @ManyToOne
-    @JoinColumn(name = "id_producto", referencedColumnName = "id_producto")
-    private ProductoGeneral producto;
+    @Column(name = "id_producto", nullable = false)
+    private Long idProducto;  // Cambio: Referencia directa al id del producto
 
     @Column(name = "cantidad", nullable = false)
     private int cantidad;
@@ -33,6 +30,6 @@ public class Ventas {
 
     @Column(name = "total_venta", nullable = false, precision = 10, scale = 2)
     private BigDecimal totalVenta;
-
-
-    }
+    
+    
+}

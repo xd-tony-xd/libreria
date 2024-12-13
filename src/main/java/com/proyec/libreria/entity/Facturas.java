@@ -1,10 +1,19 @@
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+package com.proyec.libreria.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "facturas")
@@ -14,11 +23,20 @@ public class Facturas {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_factura;
+    
+    private Long idFactura;
 
-    @Column(name = "NOMBRE_PROVEEDOR", nullable = false)
-    private String id_usuario;
+    // Clave foránea del usuario (referencia al ID de la tabla Usuarios)
+    @Column(name = "id_usuario", nullable = false)
+    private Long idUsuario;
 
-    @Column(name = "TELEFONO", nullable = false, unique = true)
-    private String fecha_factura; 
+    // Fecha y hora de la factura
+    @Column(name = "fecha_factura", nullable = false)
+    private LocalDateTime fechaFactura = LocalDateTime.now();  // Se establece el valor por defecto en el código
+
+    // Total de la factura
+    @Column(name = "total", nullable = false)
+    private BigDecimal total;
+
+   
 }
