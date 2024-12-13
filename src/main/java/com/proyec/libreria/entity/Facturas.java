@@ -24,10 +24,10 @@ public class Facturas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
-    private Long idFactura;
+    private Long id_factura;
 
     // Clave foránea del usuario (referencia al ID de la tabla Usuarios)
-    @Column(name = "id_usuario", nullable = false)
+    @Column(name = "idusuario", nullable = false)
     private Long idUsuario;
 
     // Fecha y hora de la factura
@@ -38,5 +38,11 @@ public class Facturas {
     @Column(name = "total", nullable = false)
     private BigDecimal total;
 
+    
+    
+    @ManyToOne(optional = false )
+    @JoinColumn(name = "id_usuario")
+    private Usuarios facturas;
    
+
 }

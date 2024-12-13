@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,12 +23,17 @@ public class ProductosGenerales {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_producto;
 
-    @Column(name = "NOMBRE", nullable = false)
-    private String nombre;
+    @Column(name = "NOMBREPRODUCTO", nullable = false)
+    private String nombreproducto;
 
     @Column(name = "PRECIO", nullable = false)
     private BigDecimal precio;
 
     @Column(name = "STOCK", nullable = false)
     private Integer stock;
+    
+    
+    @ManyToOne(optional = false )
+    @JoinColumn(name = "id_venta")
+    private Ventas productosgenerales;
 }

@@ -16,10 +16,10 @@ public class Ventas {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_Venta;
 
-    @Column(name = "id_factura", nullable = false)
+    @Column(name = "idfactura", nullable = false)
     private Long idFactura;  // Cambio: Referencia directa al id de la factura
 
-    @Column(name = "id_producto", nullable = false)
+    @Column(name = "idproducto", nullable = false)
     private Long idProducto;  // Cambio: Referencia directa al id del producto
 
     @Column(name = "cantidad", nullable = false)
@@ -31,5 +31,9 @@ public class Ventas {
     @Column(name = "total_venta", nullable = false, precision = 10, scale = 2)
     private BigDecimal totalVenta;
     
+    
+    @ManyToOne(optional = false )
+    @JoinColumn(name = "id_factura")
+    private Facturas ventas;
     
 }

@@ -12,7 +12,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "categorias_productos")
+@Table(name = "categoriasproductos")
 @Getter
 @Setter
 public class CategoriasProductos {
@@ -28,4 +28,7 @@ public class CategoriasProductos {
     private String descripcion;	
     
 
+    @ManyToOne(optional = false )
+    @JoinColumn(name = "id_producto")
+    private ProductosGenerales categoriasproductos;
 }

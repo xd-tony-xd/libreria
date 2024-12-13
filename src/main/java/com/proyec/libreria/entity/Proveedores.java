@@ -1,5 +1,7 @@
 package com.proyec.libreria.entity;
 
+
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,12 +29,17 @@ public class Proveedores {
     @Column(name = "TELEFONO", nullable = false, unique = true)
     private String telefono;
 
-    @Column(name = "CORREO", nullable = false)
-    private String correo;
+    @Column(name = "CORREOPROVEEDOR", nullable = false)
+    private String correoproveedor;
 
     @Column(name = "DIRECCION", nullable = false)
     private String direccion;  
     
+    
+
+    @ManyToOne(optional = false )
+    @JoinColumn(name = "id_producto")
+    private ProductosGenerales proveedores;
 
 }
 

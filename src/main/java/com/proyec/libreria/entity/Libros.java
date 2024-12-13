@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
@@ -27,10 +29,15 @@ public class Libros {
     @Column(name = "AUTOR", length = 100)
     private String autor;
 //Ofrece precisión exacta y no pierde información al realizar operaciones matemáticas.puedes asegurarte de que no haya errores de redondeo.
-    @Column(name = "PRECIO", nullable = false)
-    private BigDecimal precio;
+    @Column(name = "PRECIOLibro", nullable = false)
+    private BigDecimal preciolibro;
 
 
-    @Column(name = "STOCK", nullable = false)
-    private Integer stock;
+    @Column(name = "STOCKLIBRO", nullable = false)
+    private Integer stocklibro;
+    
+    @ManyToOne(optional = false )
+    @JoinColumn(name = "id_producto")
+    private ProductosGenerales libros;
+    
 }
