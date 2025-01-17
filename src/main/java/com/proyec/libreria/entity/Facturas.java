@@ -27,8 +27,7 @@ public class Facturas {
     private Long id_factura;
 
     // Clave foránea del usuario (referencia al ID de la tabla Usuarios)
-    @Column(name = "idusuario", nullable = false)
-    private Long idUsuario;
+   
 
     // Fecha y hora de la factura
     @Column(name = "fecha_factura", nullable = false)

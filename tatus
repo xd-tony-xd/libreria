@@ -1,0 +1,59 @@
+[33mcommit cee90d0d3f45a76bfb92a42129f258f3d2d09fd3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: xd-tony-xd <antonybrunoxyz@gmail.com>
+Date:   Fri Dec 13 09:43:24 2024 -0500
+
+    conectores manytoone
+
+[33mcommit 8f4ded97f9bc4c435e3077ac327c43db4486a49e[m
+Author: xd-tony-xd <antonybrunoxyz@gmail.com>
+Date:   Thu Dec 12 23:54:40 2024 -0500
+
+    Descripción de los cambios realizados
+
+[33mcommit 3b2c189875e9501160724dc4dfdbbd3efbaf2a11[m
+Author: Renzo Del Solar <delsolaren@gmail.com>
+Date:   Thu Dec 12 23:01:09 2024 -0500
+
+    Ventas.java
+
+[33mcommit cdad58811c0ce979630886aaf38249f08cf46d3a[m
+Author: Diego060410 <diegoluis0604@gmail.com>
+Date:   Thu Dec 12 22:59:36 2024 -0500
+
+    Update Facturas.java
+
+[33mcommit 599b79175af0af6338e0b7d612f1701b4319a128[m
+Author: Diego060410 <diegoluis0604@gmail.com>
+Date:   Thu Dec 12 22:58:30 2024 -0500
+
+    Create Proveedores.java
+
+[33mcommit 46438caad6dd5db143af251977d6423e313710d9[m
+Author: Diego060410 <diegoluis0604@gmail.com>
+Date:   Thu Dec 12 22:57:07 2024 -0500
+
+    Create Facturas.java
+
+[33mcommit 635ca1db26af225673a3a8ac804491feaf80d8b1[m
+Author: Renzo Del Solar <delsolaren@gmail.com>
+Date:   Thu Dec 12 22:56:02 2024 -0500
+
+    Rename Ventas to Ventas.java
+
+[33mcommit dc6a706eec0d9e1bff2a782a41c9462cb145fe48[m
+Author: Renzo Del Solar <delsolaren@gmail.com>
+Date:   Thu Dec 12 22:53:53 2024 -0500
+
+    Create Ventas
+
+[33mcommit bf45c5244f71f98827865f47a388f9c7ffb7d812[m
+Author: xd-tony-xd <antonybrunoxyz@gmail.com>
+Date:   Thu Dec 12 22:34:40 2024 -0500
+
+    Actualización en application.properties
+
+[33mcommit b4b3a13c5307cc2254228e1552eca79deb333eca[m
+Author: brayhamcitoxd <brayham.2503@gmail.com>
+Date:   Thu Dec 12 22:19:11 2024 -0500
+
+    CategoriasProductos.java
