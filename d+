@@ -1,0 +1,29 @@
+[33mfca8766[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Descripción de los cambios que hiciste
+[33m8bfe8da[m Add files via upload
+[33m87b31e2[m Create ProductoGeneralServiceImpl
+[33m23672b1[m Create CategoriaProductoServiceImpl
+[33m37e6002[m Create ProductoGeneralService
+[33m15a0122[m Create CategoriaProductoService
+[33ma30257a[m Create ProductoGeneralRepository
+[33m15af89e[m Create CategoriaProductoRepository
+[33m4485c21[m Create productoGeneralService
+[33mcb038f5[m Create CategoriaProductoController
+[33mb49cd03[m Update ProductosGenerales.java
+[33m0953c7a[m Update CategoriasProductos.java
+[33mb181fb4[m[33m ([m[1;31morigin/antony[m[33m, [m[1;32mantony[m[33m)[m funciona en el postman
+[33mcee90d0[m[33m ([m[1;31morigin/develop[m[33m)[m conectores manytoone
+[33m8f4ded9[m Descripción de los cambios realizados
+[33m3b2c189[m Ventas.java
+[33mcdad588[m Update Facturas.java
+[33m599b791[m Create Proveedores.java
+[33m46438ca[m Create Facturas.java
+[33m635ca1d[m Rename Ventas to Ventas.java
+[33mdc6a706[m Create Ventas
+[33mbf45c52[m Actualización en application.properties
+[33mb4b3a13[m CategoriasProductos.java
+[33m92a7d76[m ProductosGenerales.java
+[33m5386478[m Create CategoriasProductos.java
+[33m4695f72[m Create ProductosGenerales.java
+[33m2157a77[m Añadir cambios en Usuarios y agregar archivo Libros
+[33mf3ef0f8[m Añadir la carpeta entity
+[33m58fccc1[m first commit
