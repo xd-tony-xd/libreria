@@ -37,67 +37,10 @@ public class Facturas {
     // Total de la factura
     @Column(name = "total", nullable = false)
     private BigDecimal total;
+
     
-    public Facturas() {
-		super();
-	}
-
-	public Facturas(Long id_factura, Long idUsuario, LocalDateTime fechaFactura, BigDecimal total, Usuarios facturas) {
-		super();
-		this.id_factura = id_factura;
-		this.idUsuario = idUsuario;
-		this.fechaFactura = fechaFactura;
-		this.total = total;
-		this.facturas = facturas;
-	}
-
-	public Long getId_factura() {
-		return id_factura;
-	}
-
-	public void setId_factura(Long id_factura) {
-		this.id_factura = id_factura;
-	}
-
-	public Long getIdUsuario() {
-		return idUsuario;
-	}
-
-	public void setIdUsuario(Long idUsuario) {
-		this.idUsuario = idUsuario;
-	}
-
-	public LocalDateTime getFechaFactura() {
-		return fechaFactura;
-	}
-
-	public void setFechaFactura(LocalDateTime fechaFactura) {
-		this.fechaFactura = fechaFactura;
-	}
-
-	public BigDecimal getTotal() {
-		return total;
-	}
-
-	public void setTotal(BigDecimal total) {
-		this.total = total;
-	}
-
-	public Usuarios getFacturas() {
-		return facturas;
-	}
-
-	public void setFacturas(Usuarios facturas) {
-		this.facturas = facturas;
-	}
-
-
-
-
-
-
-
-	@ManyToOne(optional = false )
+    
+    @ManyToOne(optional = false )
     @JoinColumn(name = "id_usuario")
     private Usuarios facturas;
    

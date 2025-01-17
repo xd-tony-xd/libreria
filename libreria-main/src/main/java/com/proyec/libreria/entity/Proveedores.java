@@ -37,61 +37,7 @@ public class Proveedores {
     
     
 
-    public Proveedores() {
-		super();
-	}
-	public Proveedores(Long id_proveedor, String nombre_proveedor, String telefono, String correoproveedor,
-			String direccion, ProductosGenerales proveedores) {
-		super();
-		this.id_proveedor = id_proveedor;
-		this.nombre_proveedor = nombre_proveedor;
-		this.telefono = telefono;
-		this.correoproveedor = correoproveedor;
-		this.direccion = direccion;
-		this.proveedores = proveedores;
-	}
-
-	public Long getId_proveedor() {
-		return id_proveedor;
-	}
-	public void setId_proveedor(Long id_proveedor) {
-		this.id_proveedor = id_proveedor;
-	}
-	public String getNombre_proveedor() {
-		return nombre_proveedor;
-	}
-	public void setNombre_proveedor(String nombre_proveedor) {
-		this.nombre_proveedor = nombre_proveedor;
-	}
-	public String getTelefono() {
-		return telefono;
-	}
-	public void setTelefono(String telefono) {
-		this.telefono = telefono;
-	}
-	public String getCorreoproveedor() {
-		return correoproveedor;
-	}
-	public void setCorreoproveedor(String correoproveedor) {
-		this.correoproveedor = correoproveedor;
-	}
-	public String getDireccion() {
-		return direccion;
-	}
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
-	}
-	public ProductosGenerales getProveedores() {
-		return proveedores;
-	}
-	public void setProveedores(ProductosGenerales proveedores) {
-		this.proveedores = proveedores;
-	}
-
-
-
-
-	@ManyToOne(optional = false )
+    @ManyToOne(optional = false )
     @JoinColumn(name = "id_producto")
     private ProductosGenerales proveedores;
 
